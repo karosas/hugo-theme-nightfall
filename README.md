@@ -29,9 +29,12 @@ Add these params to you `config.toml`
 
 ```toml
 [params]
-author = "Mr Hugo"
 user = "hello"
 hostname = "gohugo.io"
+
+  [params.author]
+    name = "Mr Hugo"
+    email = "hugo@example.com
 ```
 
 ### Social links
@@ -52,8 +55,9 @@ url = "https://www.example.com"
 
 [[params.social]]
 key = 2
-name = "linkedin"
+name = "mastodon"
 url = "https://www.example.com"
+rel = "me"  # You can also add rel to social link
 
 [[params.social]]
 key = 3
